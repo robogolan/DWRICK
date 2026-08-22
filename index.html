@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="DWRICK makes everyday products with personality, designed by young entrepreneur Ishaan.">
+  <title>DWRICK | Made to be yours</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="DWRICK home"><span class="brand-mark">D</span><span>DWRICK</span></a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#shop">Shop</a>
+      <a href="#about">Our story</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="cart-button" type="button" aria-label="View shopping bag"><span>Bag</span><b id="cart-count">0</b></button>
+  </header>
+
+  <main id="home">
+    <section class="hero section-wrap">
+      <div class="hero-copy">
+        <p class="eyebrow">Small brand. Big ideas.</p>
+        <h1>Made to<br><em>be yours.</em></h1>
+        <p class="hero-text">Useful things, bright ideas, and products with a little more personality. Welcome to DWRICK.</p>
+        <a class="button button-dark" href="#shop">Explore the collection <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="hero-art">
+        <div class="hero-note">EST. 2024<br><strong>BY ISHAAN</strong></div>
+        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=1100&q=85" alt="A minimal watch representing DWRICK's everyday product style">
+        <div class="hero-sticker">DWRICK<br><span>OBJECTS<br>FOR EVERY DAY</span></div>
+      </div>
+    </section>
+
+    <section class="trust-strip" aria-label="DWRICK values">
+      <span>Thoughtfully picked</span><span>Made for real life</span><span>Good energy included</span>
+    </section>
+
+    <section class="shop section-wrap" id="shop">
+      <div class="section-heading"><div><p class="eyebrow">The first drop</p><h2>Things worth<br>keeping around.</h2></div><p class="section-intro">A few favorites to start with. Discover something that fits your everyday.</p></div>
+      <div class="product-grid">
+        <article class="product-card"><div class="product-image image-watch"><img src="https://images.unsplash.com/photo-1547996160-81dfa63595aa?auto=format&fit=crop&w=900&q=85" alt="Black DWRICK everyday watch"></div><div class="product-info"><div><h3>Everyday Watch</h3><p>Quietly sharp, always on time.</p></div><strong>$48</strong></div><button class="text-button add-to-bag" type="button" data-product="Everyday Watch">Add to bag <span>+</span></button></article>
+        <article class="product-card featured-product"><div class="product-image image-bag"><span class="product-label">NEW</span><img src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=900&q=85" alt="Canvas DWRICK carry-all bag"></div><div class="product-info"><div><h3>Carry-All Bag</h3><p>Room for plans, big and small.</p></div><strong>$36</strong></div><button class="text-button add-to-bag" type="button" data-product="Carry-All Bag">Add to bag <span>+</span></button></article>
+        <article class="product-card"><div class="product-image image-notebook"><img src="https://images.unsplash.com/photo-1531346878377-a5be20888e57?auto=format&fit=crop&w=900&q=85" alt="DWRICK bright notebook and pen"></div><div class="product-info"><div><h3>Idea Notebook</h3><p>For the thoughts that arrive fast.</p></div><strong>$16</strong></div><button class="text-button add-to-bag" type="button" data-product="Idea Notebook">Add to bag <span>+</span></button></article>
+      </div>
+    </section>
+
+    <section class="about-band" id="about"><div class="about-portrait"><img src="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=900&q=85" alt="Young creative entrepreneur at work"><span>THE PERSON<br>BEHIND THE IDEA</span></div><div class="about-copy"><p class="eyebrow">Our story</p><h2>Built with<br><em>curiosity.</em></h2><p>DWRICK began with Ishaan, a 9-year-old entrepreneur who loves finding products that make ordinary days feel a bit more exciting.</p><p>The idea is simple: collect useful, good-looking things that people from 10 to 72 can enjoy. DWRICK is growing one thoughtful product at a time, with a vision to make shopping feel friendly, honest, and fun.</p><a class="inline-link" href="#contact">Say hello <span>↗</span></a></div></section>
+
+    <section class="contact section-wrap" id="contact"><div><p class="eyebrow">Get in touch</p><h2>Have a question?<br><em>We'd love to hear it.</em></h2></div><form id="contact-form"><label for="name">Your name</label><input id="name" name="name" type="text" required placeholder="What should we call you?"><label for="email">Email address</label><input id="email" name="email" type="email" required placeholder="you@example.com"><label for="message">Message</label><textarea id="message" name="message" rows="4" required placeholder="Tell us what's on your mind..."></textarea><button class="button button-dark" type="submit">Send message <span aria-hidden="true">↗</span></button><p class="form-status" id="form-status" role="status"></p></form></section>
+  </main>
+
+  <footer class="site-footer"><a class="brand" href="#home"><span class="brand-mark">D</span><span>DWRICK</span></a><p>Made with big ideas by Ishaan.</p><a href="mailto:hello@dwrick.com">hello@dwrick.com</a></footer>
+  <script src="script.js"></script>
+</body>
+</html>
