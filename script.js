@@ -13,7 +13,9 @@ document.querySelectorAll('.add-to-bag').forEach((button) => {
   });
 });
 
-document.querySelector('#contact-form').addEventListener('submit', (event) => {
+const contactForm = document.querySelector('#contact-form');
+
+contactForm?.addEventListener('submit', (event) => {
   event.preventDefault();
   const form = event.currentTarget;
   const data = new FormData(form);

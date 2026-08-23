@@ -3,58 +3,60 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="DWRICK makes everyday products with personality, designed by young entrepreneur Ishaan.">
-  <title>DWRICK | Made to be yours</title>
+  <meta name="description" content="DWRICK brings exceptional products and unmatched quality to every day.">
+  <title>DWRICK | Exceptional products</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="site-header">
     <a class="brand" href="#home" aria-label="DWRICK home"><span class="brand-mark">D</span><span>DWRICK</span></a>
     <nav class="main-nav" aria-label="Main navigation">
-      <a href="#shop">Shop</a>
-      <a href="#about">Our story</a>
-      <a href="#contact">Contact</a>
+      <a href="#home">Home</a><a href="#shop">Shop</a><a href="#about">About Us</a><a href="#contact">Contact</a>
     </nav>
-    <button class="cart-button" type="button" aria-label="View shopping bag"><span>Bag</span><b id="cart-count">0</b></button>
+    <button class="cart-button" type="button" aria-label="View shopping bag"><span aria-hidden="true">♙</span><span>Sign In</span><b id="cart-count">0</b></button>
   </header>
 
   <main id="home">
-    <section class="hero section-wrap">
-      <div class="hero-copy">
-        <p class="eyebrow">Small brand. Big ideas.</p>
-        <h1>Made to<br><em>be yours.</em></h1>
-        <p class="hero-text">Useful things, bright ideas, and products with a little more personality. Welcome to DWRICK.</p>
-        <a class="button button-dark" href="#shop">Explore the collection <span aria-hidden="true">↗</span></a>
-      </div>
-      <div class="hero-art">
-        <div class="hero-note">EST. 2024<br><strong>BY ISHAAN</strong></div>
-        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=1100&q=85" alt="A minimal watch representing DWRICK's everyday product style">
-        <div class="hero-sticker">DWRICK<br><span>OBJECTS<br>FOR EVERY DAY</span></div>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-stage">
+        <div class="logo-lockup" aria-label="DWRICK logo"><div class="logo-emblem">✦</div><div class="logo-word">DWRICK</div><div class="logo-rule"><i></i><b></b><i></i></div></div>
+        <h1 id="hero-title">Exceptional Products,<br><span>Unmatched Quality</span></h1>
+        <p>Shop the Best in Electronics, Fashion, Home &amp; More</p>
+        <a class="button" href="#shop">Shop Now</a>
       </div>
     </section>
 
-    <section class="trust-strip" aria-label="DWRICK values">
-      <span>Thoughtfully picked</span><span>Made for real life</span><span>Good energy included</span>
+    <section class="benefits" aria-label="DWRICK benefits">
+      <div><span class="benefit-icon">▱</span><p><strong>Fast Shipping</strong><small>Speedy Delivery Worldwide</small></p></div>
+      <div><span class="benefit-icon">☆</span><p><strong>Top Brands</strong><small>Premium Selections</small></p></div>
+      <div><span class="benefit-icon">◉</span><p><strong>24/7 Support</strong><small>Customer Care Anytime</small></p></div>
     </section>
 
-    <section class="shop section-wrap" id="shop">
-      <div class="section-heading"><div><p class="eyebrow">The first drop</p><h2>Things worth<br>keeping around.</h2></div><p class="section-intro">A few favorites to start with. Discover something that fits your everyday.</p></div>
+    <section class="about" id="about">
+      <div class="ornament"><span></span><h2>About DWRICK</h2><span></span></div>
+      <p>Your destination for luxury, quality, and unbeatable deals.<br>We bring you the finest products with exceptional service.</p>
+      <a class="button" href="#shop">Learn More</a>
+    </section>
+
+    <section class="shop" id="shop" aria-labelledby="shop-title">
+      <div class="ornament"><span></span><h2 id="shop-title">Featured Collection</h2><span></span></div>
       <div class="product-grid">
-        <article class="product-card"><div class="product-image image-watch"><img src="https://images.unsplash.com/photo-1547996160-81dfa63595aa?auto=format&fit=crop&w=900&q=85" alt="Black DWRICK everyday watch"></div><div class="product-info"><div><h3>Everyday Watch</h3><p>Quietly sharp, always on time.</p></div><strong>$48</strong></div><details class="product-details text-button"><summary>Learn more <span>+</span></summary><p>A clean, dependable watch with a comfortable everyday fit.</p></details><button class="text-button add-to-bag" type="button" data-product="Everyday Watch">Add to bag <span>+</span></button></article>
-        <article class="product-card featured-product"><div class="product-image image-bag"><span class="product-label">NEW</span><img src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=900&q=85" alt="Canvas DWRICK carry-all bag"></div><div class="product-info"><div><h3>Carry-All Bag</h3><p>Room for plans, big and small.</p></div><strong>$36</strong></div><details class="product-details text-button"><summary>Learn more <span>+</span></summary><p>A roomy canvas carry-all designed for busy days and spontaneous plans.</p></details><button class="text-button add-to-bag" type="button" data-product="Carry-All Bag">Add to bag <span>+</span></button></article>
-        <article class="product-card"><div class="product-image image-notebook"><img src="https://images.unsplash.com/photo-1531346878377-a5be20888e57?auto=format&fit=crop&w=900&q=85" alt="DWRICK bright notebook and pen"></div><div class="product-info"><div><h3>Idea Notebook</h3><p>For the thoughts that arrive fast.</p></div><strong>$16</strong></div><details class="product-details text-button"><summary>Learn more <span>+</span></summary><p>A bright, practical place for sketches, lists, and the next big idea.</p></details><button class="text-button add-to-bag" type="button" data-product="Idea Notebook">Add to bag <span>+</span></button></article>
+        <article class="product-card"><div class="product-image image-watch">⌚</div><h3>Everyday Watch</h3><p>Quietly sharp, always on time.</p><button class="text-button add-to-bag" type="button" data-product="Everyday Watch">Add to bag +</button></article>
+        <article class="product-card"><div class="product-image image-bag">◇</div><h3>Carry-All Bag</h3><p>Room for plans, big and small.</p><button class="text-button add-to-bag" type="button" data-product="Carry-All Bag">Add to bag +</button></article>
+        <article class="product-card"><div class="product-image image-notebook">▤</div><h3>Idea Notebook</h3><p>For the thoughts that arrive fast.</p><button class="text-button add-to-bag" type="button" data-product="Idea Notebook">Add to bag +</button></article>
       </div>
     </section>
 
-    <section class="about-band" id="about" style="grid-template-columns:1fr"><div class="about-copy" style="max-width:680px"><p class="eyebrow">Our story</p><h2>Built with<br><em>curiosity.</em></h2><p>DWRICK began with Ishaan, a 10-year-old entrepreneur who loves finding products that make ordinary days feel a bit more exciting.</p><p>The idea is simple: collect useful, good-looking things that people from 10 to 72 can enjoy. DWRICK is growing one thoughtful product at a time, with a vision to make shopping feel friendly, honest, and fun.</p><a class="inline-link" href="#contact">Say hello <span>↗</span></a></div></section>
-
-    <section class="contact section-wrap" id="contact"><div><p class="eyebrow">Get in touch</p><h2>Have a question?<br><em>We'd love to hear it.</em></h2></div><form id="contact-form"><label for="name">Your name</label><input id="name" name="name" type="text" required placeholder="What should we call you?"><label for="email">Email address</label><input id="email" name="email" type="email" required placeholder="you@example.com"><label for="message">Message</label><textarea id="message" name="message" rows="4" required placeholder="Tell us what's on your mind..."></textarea><button class="button button-dark" type="submit">Send message <span aria-hidden="true">↗</span></button><p class="form-status" id="form-status" role="status"></p></form></section>
+    <section class="testimonial" aria-labelledby="testimonial-title">
+      <div class="ornament"><span></span><h2 id="testimonial-title">Testimonials</h2><span></span></div>
+      <blockquote><b>“</b><p>Amazing shopping experience! The quality is outstanding<br>and the service is top-notch.</p><cite>– Sarah M.</cite><b>”</b></blockquote>
+    </section>
   </main>
 
-  <footer class="site-footer"><a class="brand" href="#home"><span class="brand-mark">D</span><span>DWRICK</span></a><p>Made with big ideas by Ishaan.</p><a href="mailto:hello@dwrick.com">hello@dwrick.com</a></footer>
+  <footer class="site-footer" id="contact"><div><h2>Get in Touch</h2><a href="mailto:hello@dwrick.com">hello@dwrick.com</a></div><div><h2>Follow Us</h2><p>Stay connected with DWRICK</p></div></footer>
   <script src="script.js"></script>
 </body>
 </html>
