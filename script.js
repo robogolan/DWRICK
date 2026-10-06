@@ -1,6 +1,23 @@
 const cartCount = document.querySelector('#cart-count');
 let itemCount = 0;
 
+const signinDialog = document.querySelector('#signin-dialog');
+const signinForm = document.querySelector('#signin-form');
+
+document.querySelector('#signin-button')?.addEventListener('click', () => {
+  signinDialog?.showModal();
+  document.querySelector('#signin-username')?.focus();
+});
+
+document.querySelector('.signin-close')?.addEventListener('click', () => {
+  signinDialog?.close();
+});
+
+signinForm?.addEventListener('submit', (event) => {
+  event.preventDefault();
+  document.querySelector('#signin-status').textContent = 'Sign-in is not connected yet.';
+});
+
 document.querySelectorAll('.add-to-bag').forEach((button) => {
   button.addEventListener('click', () => {
     itemCount += 1;

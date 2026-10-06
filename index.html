@@ -16,8 +16,22 @@
     <nav class="main-nav" aria-label="Main navigation">
       <a href="#home">Home</a><a href="#shop">Shop</a><a href="#about">About Us</a><a href="#contact">Contact</a>
     </nav>
-    <button class="cart-button" type="button" aria-label="View shopping bag"><span aria-hidden="true">♙</span><span>Sign In</span><b id="cart-count">0</b></button>
+    <button class="cart-button" id="signin-button" type="button" aria-haspopup="dialog"><span aria-hidden="true">♙</span><span>Sign In</span><b id="cart-count">0</b></button>
   </header>
+
+  <dialog class="signin-dialog" id="signin-dialog" aria-labelledby="signin-title">
+    <form class="signin-form" id="signin-form">
+      <button class="signin-close" type="button" aria-label="Close sign-in form">&times;</button>
+      <h2 id="signin-title">Welcome Back</h2>
+      <p>Sign in to your DWRICK account.</p>
+      <label for="signin-username">Username</label>
+      <input id="signin-username" name="username" type="text" autocomplete="username" required>
+      <label for="signin-password">Password</label>
+      <input id="signin-password" name="password" type="password" autocomplete="current-password" required>
+      <button class="button signin-submit" type="submit">Sign In</button>
+      <p class="signin-status" id="signin-status" role="status" aria-live="polite"></p>
+    </form>
+  </dialog>
 
   <main id="home">
     <section class="hero" aria-labelledby="hero-title">
